@@ -7,8 +7,14 @@
 #include <unistd.h>
 
 typedef unsigned char byte;
+using namespace std;
 
-int main() {
+int main(int argc,  char** argv) {
+
+  if(argc > 1){
+    cout << "is working"<<endl;
+    exit(0);
+  }
   int fn, arg, res;
   float trigger;
   byte buf[100];
